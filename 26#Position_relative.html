@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Posicionamentos (static, relative, absolute e fixed)</title>
+		<meta charset="utf-8">
+		<style type="text/css">
+			body{
+				background: #007fc7;
+			}
+			#container{
+				background: #FFF;
+				width: 800px;
+				margin: 10px auto;
+				padding: 10px;
+			}
+			h1{
+
+			}
+			p{
+				width: 300px;
+			}
+			.relative{
+				border: 1px solid red;
+				/*Position serve para alterar o posicionamento de elementos internos do container.
+				Propriedades: top, right, bottom, left.*/
+				position: relative;
+				top: -30px;
+				left: 500px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="container">
+			<h1>Posicionamentos</h1>
+			<p>
+				P1 There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable
+			</p>
+			<p class="relative">
+				P2 There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable
+			</p>
+			<p>
+				P3 There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable
+			</p>
+		</div>
+	</body>
+</html>
