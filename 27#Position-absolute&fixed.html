@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Posicionamentos (static, relative, absolute e fixed)</title>
+		<meta charset="utf-8">
+		<style type="text/css">
+			body{
+				background: #007fc7;
+
+			}
+			#container{
+				background: #FFF;
+				width: 800px;
+				margin: 10px auto;
+				padding: 10px;
+				/*Para que a tag "position: absolute" seja posicionada dentro do container, precisamos adicionar também uma tag "position" no container.*/
+				position: relative;
+			}
+			p{
+				width: 300px;
+			}
+			/*A tag "position: fixed;" permacerá no mesmo ponto da página msm ao usar o scroll ( semelhante à chats de alguns sites).*/
+			.fixed{
+				border: 1px solid red;
+				background: #f2f2f2;
+				position: fixed;
+				top: 0px;
+				left: 0px;
+			}
+			/*A propriedade "absolute" tem como função determinar uma posição fixa de um elemento na página, podendo até mesmo sobrepor outros elementos da página. Porém, essa propriedade é resposiva ao scroll.*/
+			.absolute{
+				border: 1px solid red;
+				background: #f2f2f2;
+				position: absolute;
+				top: 80px;
+				right: 80px;
+			}
+			.relative{
+				border: 1px solid red;
+				/*Position serve para alterar o posicionamento de elementos internos no container.
+				Propriedades: top, right, bottom, left.*/
+				position: relative;
+				top: -30px;
+				left: 500px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="container">
+			<h1>Posicionamentos</h1>
+			<p class="absolute">
+				P1 There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable
+			</p>
+			<p class="fixed">
+				P2 There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable
+			</p>
+			<p>
+				P3 There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable
+			</p>
+			<p>
+				P3 There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable
+			</p>
+			<p>
+				P3 There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable
+			</p>
+			<p>
+				P3 There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable
+			</p>
+			<p>
+				P3 There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable
+			</p>
+			<p>
+				P3 There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable
+			</p>
+			<p>
+				P3 There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable
+			</p>
+			<p>
+				P3 There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable
+			</p>
+			<p>
+				P3 There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable
+			</p>
+			<p>
+				P3 There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable
+			</p>
+
+		</div>
+	</body>
+</html>
