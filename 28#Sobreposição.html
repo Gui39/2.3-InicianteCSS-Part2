@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Sobrepondo elementos</title>
+		<meta charset="utf-8">
+		<style type="text/css">
+			.conteudo1{
+				border: 1px solid red;
+				background: orange;
+				width: 200px;
+				height: 200px;
+				position: absolute;
+				/*Essa tag tem como função determinar qual elemento irá sobrepor outros. A propriedade com o número de maior valor irá sobrepor.*/  
+				z-index: 1;
+			}
+			.conteudo2{
+				border: 1px solid red;
+				background: green;
+				width: 200px;
+				height: 200px;
+				position: absolute;
+				top: 80px;
+				left: 80px;
+				/*Como a propriedade de "conteudo2" é "0" e a do "conteudo1" é "1", o "conteudo1" irá sobrepor.*/
+				z-index: 0;
+			}
+			.conteudo3{
+				border: 1px solid red;
+				background: yellow;
+				width: 200px;
+				height: 200px;
+				position: absolute;
+				top: 160px;
+				left: 160px;
+				/*Quando dois elementos apresentam o mesmo valor da propriedade de z-index, o que determinará a sobreposição é a ordem dos componentes no código*/
+				z-index: 0;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="conteudo1">
+			Conteúdo 1
+		</div>
+		<div class="conteudo2">
+			Conteúdo 2
+		</div>
+		<div class="conteudo3">
+			Conteúdo 3
+		</div>
+	</body>
+</html>
